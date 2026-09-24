@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Rowan</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Rowan lets you pre-stage an encrypted vault for the people you trust, opened only if it's ever needed.">
+<script>
+  // Send phones straight to their store listing — no code-retrieval webpage in the way.
+  // Android has no listing yet (Rowan is iOS-only for now), so it gets a visible
+  // "coming soon" state instead of a guessed redirect. Desktop/unknown gets the
+  // visible App Store fallback below.
+  (function () {
+    var PLAY_LIVE = false; // flip to true (and nothing else) once Rowan ships on Google Play
+    var PLAY_URL = "https://play.google.com/store/apps/details?id=com.animumrege.rowan";
+    var APPLE_URL = "https://apps.apple.com/app/id6790195851";
+    var ua = navigator.userAgent || "";
+    var isIOS = /iphone|ipad|ipod/i.test(ua) || (/mac/i.test(ua) && navigator.maxTouchPoints > 1);
+    var isAndroid = /android/i.test(ua);
+    if (isIOS) { location.replace(APPLE_URL); return; }
+    if (isAndroid) {
+      if (PLAY_LIVE) { location.replace(PLAY_URL); return; }
+      document.documentElement.className = "android";
+    }
+  })();
+</script>
+<style>
+  :root { --ink:#1C2436; --dusk:#2E3A55; --candle:#E8A24C; --linen:#F6F1E9; --sage:#7C9A87; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--linen); background: var(--ink); text-align: center; padding: 2rem 1.25rem;
+  }
+  main { max-width: 26rem; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 2.4rem; margin: 0 0 4px; }
+  .tag { color: var(--candle); font-size: 1.1rem; margin: 0 0 1.6em; }
+  p.copy { color: var(--linen); opacity: .85; font-size: 1.02rem; margin: 0 0 1.9rem; }
+  .badges { display: flex; gap: .9rem; justify-content: center; flex-wrap: wrap; }
+  .badges img.appstore { height: 52px; }
+  .hint { font-size: .88rem; opacity: .65; margin-top: 1.6rem; }
+  .soon-card {
+    background: var(--linen); color: var(--ink); border-radius: 16px; padding: 22px 24px;
+    font-size: 1rem; line-height: 1.5;
+  }
+  .soon-card strong { color: var(--dusk); }
+  .store-fallback { display: block; }
+  .coming-soon { display: none; }
+  html.android .store-fallback { display: none; }
+  html.android .coming-soon { display: block; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rowan</h1>
+  <p class="tag">A quiet plan for the people you trust.</p>
+
+  <div class="store-fallback">
+    <p class="copy">Rowan lets you pre-stage an encrypted vault and choose a small circle of people
+    you trust to open it — but only if it's ever needed.</p>
+    <div class="badges">
+      <a href="https://apps.apple.com/app/id6790195851" aria-label="Download on the App Store">
+        <img class="appstore" src="../assets/badges/app-store-badge.svg" alt="Download on the App Store">
+      </a>
+    </div>
+    <p class="hint">Rowan is available on iPhone and iPad.</p>
+  </div>
+
+  <div class="coming-soon">
+    <div class="soon-card">
+      <strong>Coming soon to Google Play.</strong> Rowan is available on iPhone and iPad today —
+      we'll let you know the moment Android is ready.
+    </div>
+  </div>
+</main>
+</body>
+</html>
