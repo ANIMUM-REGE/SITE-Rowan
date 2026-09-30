@@ -18,7 +18,7 @@
 <body>
 <div class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="muted">Rowan, by Animum Rege LLC. Last updated 2026-09-24.</p>
+  <p class="muted">Rowan, by Animum Rege LLC. Last updated 2026-09-29.</p>
 
   <h2>What we collect</h2>
   <p><strong>Nothing.</strong> Rowan has no analytics, no tracking, no accounts, and does not send your
@@ -26,10 +26,28 @@
   information.</p>
 
   <h2>Where your data lives</h2>
-  <p>Everything you add to Rowan — vault items, your circle, and your plan — is stored only on your
-  phone, inside the app, and is protected by your phone’s lock screen. Like other app data, it is
-  included in your phone’s backups (for example iCloud Backup or a computer backup on iPhone, or Google
-  backup on Android). Anyone who can restore those backups could restore Rowan’s data with them.</p>
+  <p>Everything you add to Rowan (vault items, your circle and your plan) is stored only on your
+  phone, inside the app.</p>
+  <p><strong>Starting with version 1.3.0</strong>, Rowan encrypts your vault on your phone as soon as you
+  set up your Recovery Kit: 12 words that Rowan shows you once, to write on paper. Rowan never stores those words and
+  never sends them anywhere, and we cannot recover them for you. Your phone’s backups (for example
+  iCloud Backup or a computer backup on iPhone, or Google backup on Android) include only the
+  encrypted vault. Restoring it on a phone needs your Recovery Kit words.</p>
+  <p>Rowan also keeps a small encrypted recovery copy with your phone’s own cloud backup service
+  (iCloud on iPhone, Google’s Block Store on Android), so a new phone can find your vault. The copy can
+  only be opened with your Recovery Kit words. Neither we nor Apple nor Google can read it.</p>
+  <p><strong>Before version 1.3.0</strong>, and on 1.3.0 until you set up your Recovery Kit, Rowan’s data is
+  protected by your phone’s lock screen and,
+  like other app data, is included in your phone’s backups. Anyone who can restore those backups could
+  restore Rowan’s data with them. That is also true of any backup made before you updated to 1.3.0,
+  until the backup is replaced or deleted.</p>
+
+  <h2>Camera and microphone</h2>
+  <p>Starting with version 1.3.0, you can add photos, videos and voice notes to your vault. Rowan uses
+  the camera and the microphone only when you choose to take a photo or video or record a voice note.
+  What you record goes straight into your vault, encrypted on your phone, and Rowan never sends it
+  anywhere. On Android, photos, videos and voice notes are not included in your phone’s backups and stay
+  on the phone where you added them. On iPhone, they are part of the encrypted vault in your backup.</p>
 
   <h2>Your circle</h2>
   <p>In this version, your circle is planned and previewed on your own phone. The names you add are not
@@ -46,8 +64,10 @@
 
   <h2>Deleting your data</h2>
   <p>Deleting the app removes Rowan’s data from your phone. Starting with version 1.1, you can also
-  delete everything from Settings in the app. Copies in backups made earlier remain until those backups
-  are replaced or deleted.</p>
+  delete everything from Settings in the app. Starting with version 1.3.0, that also deletes this
+  vault’s encrypted recovery copy from your phone’s cloud backup service. If Rowan can’t reach that
+  service at the time, it tells you and lets you try again. Copies in backups made earlier remain until
+  those backups are replaced or deleted.</p>
 
   <h2>Contact</h2>
   <p><a href="mailto:support@animumrege.com">support@animumrege.com</a></p>
