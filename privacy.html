@@ -18,63 +18,72 @@
 <body>
 <div class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="muted">Rowan, by Animum Rege LLC. Last updated 2026-09-29.</p>
+  <p class="muted">Rowan, by Animum Rege LLC. Last updated [C1 release date].</p>
 
-  <h2>What we collect</h2>
-  <p><strong>Nothing.</strong> Rowan has no analytics, no tracking, no accounts, and does not send your
-  data to us or to anyone else. We do not receive your vault, your contacts, your usage, or any personal
-  information.</p>
+<h2>The short version</h2>
+<p>Your vault is encrypted on your phone. To connect you with your circle, Rowan now uses a small server of ours (a “relay”). It stores only encrypted pieces it can’t open, plus a random account number and a notification address for your phone. We don’t have your name, email, phone number, or the names of anyone in your circle. No analytics, no tracking, no ads.</p>
+<h2>What Rowan keeps on its server</h2>
+<p>To connect your circle, our relay stores:</p>
+<ul>
+<li><strong>encrypted records</strong>: your plan’s pieces for your circle, your circle’s invitations, and encrypted copies of the photos and recordings your plan includes. All of them are sealed on a phone, and we can’t open them;</li>
+<li><strong>a random account identifier</strong> your phone makes. It isn’t your name, email or phone number. Your phone makes one for each circle you own or belong to;</li>
+<li><strong>a notification address</strong> for your phone, so we can alert you.</li>
+</ul>
+<p>Your phone has one notification address, shared by all your circles on that phone, so our server can tell that those accounts are on the same phone. The server also keeps short-lived request counters (a few minutes) to block replayed requests.</p>
+<h2>IP addresses</h2>
+<p>We don’t store IP addresses. Our server uses your connection’s IP address only in its working memory, to slow down abuse (for example, too many invitation attempts), and never writes it to its database or its logs.</p>
+<h2>Service logs</h2>
+<p>Our service logs keep errors and timings, not your account identifier or notification address, for 30 days.</p>
+<h2>Notifications</h2>
+<p>Apple (on iPhone) and Google’s Firebase Cloud Messaging (on Android) deliver our notifications. We never send them what’s in your plan or anyone’s name. Each notification carries only a fixed sentence and a code for its kind. On iPhone, Rowan replaces even that sentence on your phone before you see it. Apple and Google can see when phones get Rowan notifications, which could hint that those phones are connected. On Android, Google’s notification service also gives the app an installation identifier of its own.</p>
+<h2>Who handles data for us</h2>
+<p>Microsoft Azure hosts our relay in the United States (its East US 2 region), under Microsoft’s data protection terms for its cloud services. Apple delivers our notifications on iPhone, and Google (Firebase Cloud Messaging) on Android. They handle only what this policy describes. We don’t sell or share your information with anyone else.</p>
+<h2>What we can’t see</h2>
+<p>Your vault, your letters, your photos and recordings, and the names of anyone in your circle. Names stay on your phones. When someone joins your circle, their name travels to you encrypted, and our server can’t read it.</p>
+<h2>Opening your plan</h2>
+<p>In this version, nobody can open your plan, and our server refuses to start an opening. Opening comes in a future update: your circle opens your plan together, only when as many of them agree as you chose, after a waiting time in which you can stop it. We’ll update this policy before that update ships.</p>
+<h2>Alerts are best effort</h2>
+<p>Notifications can be delayed or silenced by your phone’s settings, Focus modes, or a phone that’s off.</p>
+<h2>How long we keep things</h2>
 
-  <h2>Where your data lives</h2>
-  <p>Everything you add to Rowan (vault items, your circle and your plan) is stored only on your
-  phone, inside the app.</p>
-  <p><strong>Starting with version 1.3.0</strong>, Rowan encrypts your vault on your phone as soon as you
-  set up your Recovery Kit: 12 words that Rowan shows you once, to write on paper. Until you confirm your Recovery
-  Kit, its words are kept encrypted on this phone only, so you can finish later. They never leave the phone and are
-  not in your backups. Once you confirm them, Rowan no longer stores them. We cannot recover them for you. Your phone’s backups (for example
-  iCloud Backup or a computer backup on iPhone, or Google backup on Android) include only the
-  encrypted vault. Restoring it on a phone needs your Recovery Kit words.</p>
-  <p>Rowan also keeps a small encrypted recovery copy with your phone’s own cloud backup service
-  (iCloud on iPhone, Google’s Block Store on Android), so a new phone can find your vault. The copy can
-  only be opened with your Recovery Kit words. Neither we nor Apple nor Google can read it.</p>
-  <p><strong>Before version 1.3.0</strong>, and on 1.3.0 until you set up your Recovery Kit, Rowan’s data is
-  protected by your phone’s lock screen and,
-  like other app data, is included in your phone’s backups. Anyone who can restore those backups could
-  restore Rowan’s data with them. That is also true of any backup made before you updated to 1.3.0,
-  until the backup is replaced or deleted.</p>
+<ul>
+<li><strong>Invitations:</strong> an invitation lasts at most 7 days. An unused one is deleted from our server within 7 days after it expires.</li>
+<li><strong>Old versions of your circle:</strong> your phone deletes them from our server when you change your circle. If it can’t finish, our server removes the old records 7 days later. Old encrypted photo and recording copies are deleted by your phone, and in any case when the circle is deleted.</li>
+<li><strong>Accounts:</strong> an account that’s in no circle and hasn’t been used for 180 days is deleted, with its notification address. That includes the account for a circle you left (see Deleting).</li>
+<li><strong>Circles:</strong> a circle and its encrypted records are kept until its owner deletes it, even if nobody opens Rowan for years. That’s what it’s for.</li>
+</ul>
+<h2>Deleting</h2>
 
-  <h2>Camera and microphone</h2>
-  <p>Starting with version 1.3.0, you can add photos, videos and voice notes to your vault. Rowan uses
-  the camera and the microphone only when you choose to take a photo or video or record a voice note.
-  What you record goes straight into your vault, encrypted on your phone, and Rowan never sends it
-  anywhere. On Android, photos, videos and voice notes are not included in your phone’s backups and stay
-  on the phone where you added them. On iPhone, they are part of the encrypted vault in your backup.</p>
-
-  <h2>Your circle</h2>
-  <p>In this version, your circle is planned and previewed on your own phone. The names you add are not
-  sent to those people or to us, and nothing is delivered to anyone.</p>
-
-  <h2>Releasing your vault</h2>
-  <p>In this version, a release is a private preview on your phone that shows what each person would
-  receive. Delivery to your circle — requiring the number of people you chose to agree, with a
-  challenge window during which you can say “I’m fine” — is coming in a future update. We will update
-  this policy before that update ships.</p>
-
-  <h2>Payments</h2>
-  <p>Any purchase is processed by Apple or Google. We never see your payment details.</p>
-
-  <h2>Deleting your data</h2>
-  <p>Deleting the app removes Rowan’s data from your phone. Starting with version 1.1, you can also
-  delete everything from Settings in the app. Starting with version 1.3.0, that also deletes the
-  encrypted recovery copies this phone made with your phone’s cloud backup service (if you choose to keep old
-  vaults on this phone, their copies are kept with them). If Rowan can’t reach that service at the time,
-  it tells you, and again the next time you open Rowan, and lets you try again. If your phone is now signed in
-  to a different account with that service than the one a copy was saved in, Rowan can’t delete that copy: it
-  tells you the copy may remain there, and lets you try again after you sign back in to that account. Copies in
-  backups made earlier remain until those backups are replaced or deleted.</p>
-
-  <h2>Contact</h2>
-  <p><a href="mailto:support@animumrege.com">support@animumrege.com</a></p>
+<ul>
+<li><strong>Owners:</strong> in the app, Settings → Delete everything. This closes your circle, tells your circle members, and deletes everything our server holds for that circle and your account, then erases Rowan’s data on your phone.</li>
+<li><strong>Members:</strong> Delete my Rowan data removes you from every circle and deletes your accounts on our server.</li>
+<li><strong>Leaving one circle:</strong> “Leave [name]’s circle” removes you from that circle at once. The random account you used for it, and its notification address, stay on our server until the 180-day clean-up, unless you also use Delete my Rowan data.</li>
+<li><strong>Deleting the app</strong> doesn’t delete what our server holds for you, so use Delete everything or Delete my Rowan data first. See <a href="https://rowan.animumrege.com/delete">rowan.animumrege.com/delete</a>.</li>
+<li><strong>Recovery copies:</strong> Delete everything also deletes the encrypted recovery copies this phone made with your phone’s cloud backup service (if you choose to keep old vaults on this phone, their copies are kept with them). If Rowan can’t reach that service at the time, it tells you, and again the next time you open Rowan, and lets you try again. If your phone is now signed in to a different account with that service than the one a copy was saved in, Rowan can’t delete that copy: it tells you the copy may remain there, and lets you try again after you sign back in to that account. Copies in backups made earlier remain until those backups are replaced or deleted.</li>
+</ul>
+<h2>Where your vault lives</h2>
+<p>Everything you add to Rowan (vault items, your circle and your plan) lives on your phone, inside the app. Rowan encrypts your vault on your phone as soon as you set up your Recovery Kit: 12 words that Rowan shows you once, to write on paper. Until you confirm your Recovery Kit, its words are kept encrypted on this phone only, so you can finish later. They never leave the phone and are not in your backups. Once you confirm them, Rowan no longer stores them, and we can’t recover them for you. Your phone’s backups (for example iCloud Backup or a computer backup on iPhone, or Google backup on Android) include only the encrypted vault, and restoring it on a phone needs your Recovery Kit words.</p>
+<p>Rowan also keeps a small encrypted recovery copy with your phone’s own cloud backup service (iCloud on iPhone, Google’s Block Store on Android), so a new phone can find your vault. The copy can only be opened with your Recovery Kit words. Neither we nor Apple nor Google can read it.</p>
+<p><strong>Before version 1.3.0</strong>, and on later versions until you set up your Recovery Kit, Rowan’s data is protected by your phone’s lock screen and, like other app data, is included in your phone’s backups. Anyone who can restore those backups could restore Rowan’s data with them. That is also true of any backup made before you updated to 1.3.0, until the backup is replaced or deleted.</p>
+<h2>Camera and microphone</h2>
+<p>You can add photos, videos and voice notes to your vault. Rowan uses the camera and the microphone only when you choose to take a photo or video, record a voice note, or scan the code on a circle member’s phone. What you record goes straight into your vault, encrypted on your phone. If your plan gives it to someone in your circle, an encrypted copy goes to our relay for them, and we can’t open it. On Android, photos, videos and voice notes are not included in your phone’s backups. On iPhone, they are part of the encrypted vault in your backup.</p>
+<h2>Payments</h2>
+<p>Rowan doesn’t sell anything in this version. If you subscribed to an earlier version, Apple or Google Play handles that subscription. You can see, restore or manage it in Settings, and we never see payment details.</p>
+<h2>Age</h2>
+<p>Rowan is for adults (18+).</p>
+<h2>Your rights</h2>
+<p>Wherever you live, you can ask us what we hold about you, ask us to correct or delete it, and ask for a copy of it. If you are in the European Union, the European Economic Area or the United Kingdom, the GDPR and the UK GDPR also give you the right to restrict or object to how we use it, and to move it to another service.</p>
+<ul>
+<li><strong>Why we use it (our lawful basis).</strong> We use the information above to provide the service you asked for: connecting you with your circle (a contract with you). We use your IP address in working memory and keep error logs to keep the service secure and working, which is our legitimate interest in protecting it.</li>
+<li><strong>Where it’s processed.</strong> Our relay runs in the United States (Microsoft Azure, East US 2). If you use Rowan from outside the United States, the information in “What Rowan keeps on its server” is processed there.</li>
+<li><strong>How to use your rights.</strong> We don’t have your name, email address or phone number, so we can’t find your account from them. Your account is a key on your phone, so the app is how you reach it: Delete everything or Delete my Rowan data deletes what our server holds for you (see Deleting). For anything else, email <a href="mailto:support@animumrege.com">support@animumrege.com</a>. Because we can’t identify you from outside the app, we may need you to make the request from it, and if we can’t link a request to an account, we’ll tell you so.</li>
+<li><strong>California.</strong> If you live in California, the CCPA, as amended by the CPRA, gives you the rights to know, delete and correct, and we won’t treat you differently for using them. We don’t sell or share your personal information, as those laws define selling and sharing, and we don’t use it to profile you or show you ads. The personal information we hold is the identifiers above: a random account identifier and a notification address.</li>
+<li><strong>Complaints.</strong> You can complain to a data protection authority, for example the one where you live or work. In the United Kingdom, that’s the Information Commissioner’s Office. We’d like to hear from you first, at <a href="mailto:support@animumrege.com">support@animumrege.com</a>.</li>
+</ul>
+<h2>Changes</h2>
+<p>If we change this policy, we’ll post the new version here with a new date, and we’ll update it before any version of Rowan that changes what it keeps.</p>
+<h2>Who we are</h2>
+<p>Rowan is made by Animum Rege LLC (registered as ANIMUM REGE L.L.C.), a Louisiana limited liability company, PO Box 430, French Settlement, LA 70733, United States. Contact: <a href="mailto:support@animumrege.com">support@animumrege.com</a>. This policy is governed by the laws of the State of Louisiana, without taking away any protection the law where you live gives you.</p>
 
   <p class="muted"><a href="index.html">← Back to Rowan</a></p>
 </div>
