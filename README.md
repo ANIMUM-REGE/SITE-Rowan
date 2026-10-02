@@ -2,21 +2,22 @@
 
 > Marketing and privacy pages for Rowan: Trusted Circle.
 
-Static site for the app in [`APP-TrustedCircle`](https://github.com/ANIMUM-REGE/APP-TrustedCircle).
+Static site for the app in [`APP-Rowan`](https://github.com/ANIMUM-REGE/APP-Rowan) (iOS) and [`APP-RowanAndroid`](https://github.com/ANIMUM-REGE/APP-RowanAndroid).
 Part of the Perpetua app fleet (`VNTR-Perpetua`).
 
 ## Hosting
 
-**No `CNAME` committed** — this site has no custom domain configured in the repo. If it is expected to be publicly reachable, verify how it is served before assuming it is.
+GitHub Pages from `main`, no custom domain (no `CNAME`): **https://animum-rege.github.io/SITE-Rowan/** (verified 200, 2026-10-02). The store listings link its `privacy.html`.
 
 ## Pages
 
 - `index.html`
 - `privacy.html`
+- `get/index.html`
 
 ## App status
 
-Rowan is ✅ READY_FOR_SALE on the App Store but ⛔ **rejected on Google Play** (2026-07-20, unresolved).
+Rowan is ✅ live on both the App Store (v1.3.0 public, 1.4.0 in review) and Google Play (1.4.0) — as read 2026-10-02.
 
 > Status drifts — **re-verify rather than trust this line.**
 > `VNTR-Perpetua/company/state/app-fleet-status-2026-08-15.md` (as verified 2026-08-15)
