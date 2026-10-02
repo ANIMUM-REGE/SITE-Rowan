@@ -20,8 +20,8 @@ GitHub Pages from `main`, no custom domain (no `CNAME`): **https://animum-rege.g
 Rowan is ✅ live on both the App Store (v1.3.0 public, 1.4.0 in review) and Google Play (1.4.0) — as read 2026-10-02.
 
 > Status drifts — **re-verify rather than trust this line.**
-> `VNTR-Perpetua/company/state/app-fleet-status-2026-08-15.md` (as verified 2026-08-15)
-> carries the fleet-wide picture and the method to re-derive it.
+> `VNTR-Perpetua/company/state/ops-drops/store-versions.json` (live ASC / Play / public-store reads, refreshed each publisher cycle by `PRJ-Perpetua/dashboard/store_versions.py`)
+> carries the fleet-wide picture.
 
 ## Editing
 
